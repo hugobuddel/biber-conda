@@ -1,15 +1,13 @@
 {% set name = "biber" %}
-{% set version = "2.5" %}
+{% set version = "2.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/{{ version }}/binaries/Linux/{{ name }}-linux_x86_64.tar.gz # [linux]
-  sha1: 4688b31725f6ee1291c1e2b0646c102ef32085a6 # [linux]
-  url: https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/{{ version }}/binaries/OSX_Intel/{{ name }}-darwin_x86_64.tar.gz # [osx]
-  sha1: 89ac547af7a9d474106c99fe81511037f90c0ef6 # [osx]
+  url: https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/current/binaries/Linux/{{ name }}-linux_x86_64.tar.gz # [linux]
+  url: https://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/current/binaries/OSX_Intel/{{ name }}-darwin_x86_64.tar.gz # [osx]
 
 build:
   number: 0
